@@ -3,7 +3,7 @@ console.log(closebtns);
 
 Array.from(closebtns).forEach(element => {
     element.addEventListener("click", function(){
-        this.parentElement.style.display = 'none';
+        this.parentElement.remove();
     })
 });
 
@@ -15,10 +15,10 @@ function adicionar(){
 
     const span = document.createElement("span");
     span.appendChild(document.createTextNode("X"))
+    span.classList.add("close");
     span.addEventListener("click", function(){
         this.parentElement.style.display = 'none';
     });
-
     li.appendChild(span);
     ul.appendChild(li);
 }
