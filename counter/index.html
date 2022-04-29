@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="scripts.js"></script>
     <title>Contador</title>
 </head>
 <body>
     <div class="column-container">
         <h1>Contador</h1>
-        <p>0</p>
+        <p id="counter">0</p>
         <div class="row-container">
-            <button type="button" class="btn">Incrementa</button>
-            <button type="button" class="btn">Reseta</button>
-            <button type="button" class="btn">Decrementa</button>
+            <button type="button" class="btn" onclick="incrementa()">Incrementa</button>
+            <button type="button" class="btn" onclick="reseta()">Reseta</button>
+            <button type="button" class="btn" onclick="decrementa()">Decrementa</button>
         </div>
     </div>
 </body>
