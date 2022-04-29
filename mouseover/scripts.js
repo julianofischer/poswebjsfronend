@@ -1,7 +1,7 @@
-function increase(){
-    const circle = document.getElementById('circle');
-    let width = circle.offsetWidth;
-    let height = circle.offsetHeight;
-    circle.style.width = width + 10 + "px";
-    circle.style.height = height + 10 + "px";
+function aumentar(){
+    const sq = document.getElementById('square');
+    let width = sq.offsetWidth;
+    let height = sq.offsetHeight;
+    sq.style.width = width + 10 + "px";
+    sq.style.height = height + 10 + "px";
 }
