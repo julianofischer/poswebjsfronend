@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="scripts.js"></script>
     <title>todolist</title>
 </head>
 <body>
@@ -11,10 +10,10 @@
         <h1>Todo</h1>
         <div class="row-container">
             <input type="text" name="item" id="item">
-            <input type="button" class="btn" value="Adicionar">
+            <input type="button" class="btn" value="Adicionar" onclick="adicionar()">
         </div>
         <div class="row-container card">
-            <ul>
+            <ul id="list">
                 <li>Comprar leite<span class="close">X</span></li>
                 <li>Estudar para a prova<span class="close">X</span></li>
                 <li>Não votar em fascista<span class="close">X</span></li>
@@ -22,4 +21,7 @@
         </div>
     </div>
 </body>
+<footer>
+    <script type="text/javascript" src="scripts.js"></script>
+</footer>
 </html>
